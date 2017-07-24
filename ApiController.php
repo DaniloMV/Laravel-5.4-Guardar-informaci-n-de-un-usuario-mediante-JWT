@@ -13,7 +13,7 @@ use Validator;
 use Response;
 use Auth;
 
-class RestfullControllerPasajeros extends Controller
+class ApiController extends Controller
 {   
     
     public function login(Request $request){
