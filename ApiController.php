@@ -1,4 +1,22 @@
-public function login(Request $request){
+<?php
+
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use JWTAuth;
+use App\User;
+use JWTAuthException;
+use Tymon\JWTAuth\Providers\AbstractProvider;
+use Tymon\JWTAuth\Providers\ProviderInterface;
+use Validator;
+use Response;
+use Auth;
+
+class RestfullControllerPasajeros extends Controller
+{   
+    
+    public function login(Request $request){
         $credentials = $request->only('email', 'password');
 
         $pasajero = User::first();
@@ -18,3 +36,5 @@ public function login(Request $request){
 
         return response()->json(compact('token', 'user'));
     }
+
+}  
