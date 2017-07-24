@@ -19,7 +19,7 @@ class ApiController extends Controller
     public function login(Request $request){
         $credentials = $request->only('email', 'password');
 
-        $pasajero = User::first();
+        //$pasajero = User::first();
 
         $customClaims = ['datos' => User::first()];
 
