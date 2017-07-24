@@ -1,1 +1,2 @@
-# Laravel-5.4-Guardar-informaci-n-de-un-usuario-mediante-JWT
+# Laravel 5.4: Guardar información de un usuario en un Token mediante JWT.
+Parte fundamental de una Rest API es enviar la data por medio de un token el cual nos ayuda a mantener la seguridad de la información de los usuarios. Las aplicaciones en este caso para Android no soporta sesiones ni cookies, solo debemos almacenar la data del usuario en el celular via Shared, en este tutorial vamos a meter la información privada del usuario mediante JWT en Laravel 5.4, vamos con el tutorial.
